@@ -13,7 +13,14 @@ FormGalilMotor::FormGalilMotor(QString group, QWidget *parent) :
     SET_GROUP(QELabel);
     SET_GROUP(QELineEdit);
     SET_GROUP(QEPushButton);
-    SET_GROUP(QEComboBox);
+    SET_GROUP(QESimpleShape);
+    SET_GROUP(QERadioGroup);
+
+    QPalette p = ui->btnStop->palette();
+    p.setColor(QPalette::Button, Qt::red);
+    ui->btnStop->setAutoFillBackground(true);
+    ui->btnStop->setPalette(p);
+    ui->btnStop->update();
 }
 
 FormGalilMotor::~FormGalilMotor()
@@ -25,4 +32,9 @@ void FormGalilMotor::on_btnExpert_clicked()
 {
     this->expert = new FormGalilMotorExpert(this->group);
     _SHOW_UI(expert);
+}
+
+void FormGalilMotor::on_btnStop_clicked()
+{
+    Client::writePV(this->group + ".STOP", 1);
 }

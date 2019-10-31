@@ -20,3 +20,9 @@ FormGalilMotorExpert::~FormGalilMotorExpert()
 {
     delete ui;
 }
+
+void FormGalilMotorExpert::on_btnStatus_clicked()
+{
+    this->status = new FormGalilMotorStatus(this->group);
+    _SHOW_UI(status);
+}

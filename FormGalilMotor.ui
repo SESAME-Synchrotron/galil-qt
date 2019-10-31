@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>541</width>
+    <width>671</width>
     <height>451</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
     <rect>
      <x>10</x>
      <y>0</y>
-     <width>520</width>
+     <width>651</width>
      <height>81</height>
     </rect>
    </property>
@@ -44,7 +44,7 @@ QGroupBox::title {
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>500</width>
+      <width>630</width>
       <height>51</height>
      </rect>
     </property>
@@ -78,7 +78,7 @@ QGroupBox::title {
     <rect>
      <x>10</x>
      <y>170</y>
-     <width>520</width>
+     <width>650</width>
      <height>200</height>
     </rect>
    </property>
@@ -364,21 +364,27 @@ QGroupBox::title {
    <widget class="QESimpleShape" name="ledHLS">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>42</y>
+      <x>440</x>
+      <y>40</y>
       <width>16</width>
-      <height>16</height>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group).HLS</string>
     </property>
    </widget>
    <widget class="QESimpleShape" name="ledLLS">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>102</y>
+      <x>440</x>
+      <y>100</y>
       <width>16</width>
-      <height>16</height>
+      <height>20</height>
      </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group).LLS</string>
     </property>
    </widget>
    <widget class="QELabel" name="lblReadRaw">
@@ -524,7 +530,7 @@ QGroupBox::title {
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>420</x>
       <y>20</y>
       <width>50</width>
       <height>20</height>
@@ -535,19 +541,6 @@ QGroupBox::title {
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QEComboBox" name="cbSPMG">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>130</y>
-      <width>80</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group).SPMG</string>
     </property>
    </widget>
    <widget class="QEPushButton" name="qepushbutton">
@@ -614,17 +607,67 @@ QGroupBox::title {
      <string>$(group).JOGF</string>
     </property>
    </widget>
-   <widget class="QEComboBox" name="cbSPMG_2">
+   <widget class="QERadioGroup" name="qeradiogroup">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>160</y>
-      <width>80</width>
-      <height>30</height>
+      <x>520</x>
+      <y>60</y>
+      <width>120</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group).SPMG</string>
+    </property>
+    <property name="title" stdset="0">
+     <string/>
+    </property>
+    <property name="columns">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="buttonStyle">
+     <enum>QRadioGroup::Push</enum>
+    </property>
+   </widget>
+   <widget class="QERadioGroup" name="qeradiogroup_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>120</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="variable" stdset="0">
      <string>$(group)_able.VAL</string>
+    </property>
+    <property name="title" stdset="0">
+     <string/>
+    </property>
+    <property name="columns">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="buttonStyle">
+     <enum>QRadioGroup::Push</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnStop">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>120</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>STOP</string>
     </property>
    </widget>
   </widget>
@@ -633,7 +676,7 @@ QGroupBox::title {
     <rect>
      <x>10</x>
      <y>380</y>
-     <width>520</width>
+     <width>651</width>
      <height>61</height>
     </rect>
    </property>
@@ -657,7 +700,7 @@ QGroupBox::title {
    <widget class="QPushButton" name="btnClose">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>550</x>
       <y>20</y>
       <width>91</width>
       <height>30</height>
@@ -686,7 +729,7 @@ QGroupBox::title {
     <rect>
      <x>10</x>
      <y>90</y>
-     <width>520</width>
+     <width>651</width>
      <height>70</height>
     </rect>
    </property>
@@ -724,7 +767,7 @@ QGroupBox::title {
      <rect>
       <x>310</x>
       <y>20</y>
-      <width>80</width>
+      <width>90</width>
       <height>20</height>
      </rect>
     </property>
@@ -737,7 +780,7 @@ QGroupBox::title {
      <rect>
       <x>400</x>
       <y>20</y>
-      <width>110</width>
+      <width>120</width>
       <height>20</height>
      </rect>
     </property>
@@ -753,7 +796,7 @@ QGroupBox::title {
      <rect>
       <x>310</x>
       <y>40</y>
-      <width>80</width>
+      <width>90</width>
       <height>20</height>
      </rect>
     </property>
@@ -766,7 +809,7 @@ QGroupBox::title {
      <rect>
       <x>400</x>
       <y>40</y>
-      <width>110</width>
+      <width>120</width>
       <height>20</height>
      </rect>
     </property>
@@ -803,14 +846,25 @@ QGroupBox::title {
      <string>$(group).EGU</string>
     </property>
    </widget>
+   <widget class="QEPushButton" name="qepushbutton_5">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>20</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sync</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group).SYNC</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>QEComboBox</class>
-   <extends>QComboBox</extends>
-   <header>QEComboBox.h</header>
-  </customwidget>
   <customwidget>
    <class>QELabel</class>
    <extends>QLabel</extends>
@@ -825,6 +879,11 @@ QGroupBox::title {
    <class>QEPushButton</class>
    <extends>QPushButton</extends>
    <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioGroup</class>
+   <extends>QWidget</extends>
+   <header>QERadioGroup.h</header>
   </customwidget>
   <customwidget>
    <class>QESimpleShape</class>

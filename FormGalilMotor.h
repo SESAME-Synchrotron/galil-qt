@@ -6,6 +6,7 @@
 #include "FormGalilMotorExpert.h"
 
 #include "macros.h"
+#include "client.h"
 
 namespace Ui {
 class FormGalilMotor;
@@ -21,6 +22,8 @@ public:
 
 private slots:
     void on_btnExpert_clicked();
+
+    void on_btnStop_clicked();
 
 private:
     Ui::FormGalilMotor *ui;

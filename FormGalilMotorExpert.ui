@@ -1017,6 +1017,9 @@ QGroupBox::title {
         <property name="variable" stdset="0">
          <string>$(group).TDIR</string>
         </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
        </widget>
        <widget class="QELabel" name="lblMOVN">
         <property name="geometry">
@@ -1032,6 +1035,9 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).MOVN</string>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
         </property>
        </widget>
        <widget class="QELabel" name="lblATHM">
@@ -1049,6 +1055,9 @@ QGroupBox::title {
         <property name="variable" stdset="0">
          <string>$(group).ATHM</string>
         </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
        </widget>
        <widget class="QELabel" name="lblRMP">
         <property name="geometry">
@@ -1064,6 +1073,9 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).RMP</string>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
         </property>
        </widget>
        <widget class="QELabel" name="lblREP">
@@ -1081,6 +1093,9 @@ QGroupBox::title {
         <property name="variable" stdset="0">
          <string>$(group).REP</string>
         </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
        </widget>
        <widget class="QELabel" name="lblMIP">
         <property name="geometry">
@@ -1096,6 +1111,9 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).MIP</string>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
         </property>
        </widget>
        <widget class="QELabel" name="lblDIFF">
@@ -1113,6 +1131,9 @@ QGroupBox::title {
         <property name="variable" stdset="0">
          <string>$(group).DIFF</string>
         </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
        </widget>
        <widget class="QELabel" name="lblVERS">
         <property name="geometry">
@@ -1129,6 +1150,9 @@ QGroupBox::title {
         <property name="variable" stdset="0">
          <string>$(group).VERS</string>
         </property>
+        <property name="addUnits">
+         <bool>false</bool>
+        </property>
        </widget>
        <widget class="QELabel" name="lblCARD">
         <property name="geometry">
@@ -1144,6 +1168,9 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).CARD</string>
+        </property>
+        <property name="addUnits">
+         <bool>false</bool>
         </property>
        </widget>
        <widget class="QELineEdit" name="txtPREC">
@@ -1176,19 +1203,6 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).CNEN</string>
-        </property>
-       </widget>
-       <widget class="QEPushButton" name="qepushbutton_2">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>20</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Status</string>
         </property>
        </widget>
        <widget class="QELabel" name="lblTDIR_3">
@@ -1250,6 +1264,19 @@ QGroupBox::title {
         </property>
         <property name="variable" stdset="0">
          <string>$(group).FLNK</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnStatus">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>83</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Status</string>
         </property>
        </widget>
       </widget>

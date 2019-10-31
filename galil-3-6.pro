@@ -34,7 +34,9 @@ SOURCES += \
     FormGalilControllerIO.cpp \
     FormGalilController.cpp \
     macros.cpp \
-    FormGalilCS.cpp
+    FormGalilCS.cpp \
+    client.cpp \
+    FormGalilMotorStatus.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +48,9 @@ HEADERS += \
     FormGalilControllerIO.h \
     FormGalilController.h \
     macros.h \
-    FormGalilCS.h
+    FormGalilCS.h \
+    client.h \
+    FormGalilMotorStatus.h
 
 FORMS += \
         mainwindow.ui \
@@ -57,7 +61,8 @@ FORMS += \
     FormGalilControllerIO.ui \
     FormGalilMotor.ui \
     FormGalilMotorSSI.ui \
-    FormGalilCS.ui
+    FormGalilCS.ui \
+    FormGalilMotorStatus.ui
 
 unix:!macx: {
     LIBS += -L$$(QE_TARGET_DIR)/lib/linux-x86_64/ -lQEFramework

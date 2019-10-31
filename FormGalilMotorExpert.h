@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include "macros.h"
+#include "FormGalilMotorStatus.h"
 
 namespace Ui {
 class FormGalilMotorExpert;
@@ -17,8 +18,13 @@ public:
     explicit FormGalilMotorExpert(QString group, QWidget *parent = 0);
     ~FormGalilMotorExpert();
 
+private slots:
+    void on_btnStatus_clicked();
+
 private:
     Ui::FormGalilMotorExpert *ui;
+
+    FormGalilMotorStatus* status;
 
     QString group;
 };
