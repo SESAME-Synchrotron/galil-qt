@@ -13,12 +13,39 @@ FormGalilController::FormGalilController(QString group, QString axis, QString cs
     this->group += ":";
 
     QStringList items = axis.split(",");
-    for(int i = 0; i < items.size(); i++)
-        this->axisMotors[i] = items[i];
+    std::cout << items.size() << std::endl;
+    if(items.size() != MOTORS_COUNT)
+    {
+        std::cout << "Invalid Motors Count." << std::endl;
+        exit(1);
+    }
 
-    items = cs.split(",");
     for(int i = 0; i < items.size(); i++)
-        this->csMotors[i] = items[i];
+    {
+        if(!items[i].isEmpty())
+        {
+            this->findChild<QComboBox*>("cbMotorA_" + QString::number(i + 1))->setEnabled(true);
+            this->axisMotors[i] = items[i];
+        }
+    }
+
+    if(!cs.isEmpty())
+    {
+        items = cs.split(",");
+        if(items.size() != MOTORS_COUNT)
+        {
+            std::cout << "Invalid CS Motors Count." << std::endl;
+            exit(1);
+        }
+        for(int i = 0; i < items.size(); i++)
+        {
+            if(!items[i].isEmpty())
+            {
+                this->findChild<QComboBox*>("cbMotorA_" + QString::number(i + 9))->setEnabled(true);
+                this->csMotors[i] = items[i];
+            }
+        }
+    }
 
     CONNECT_CLOSE_BUTTON;
     SET_GROUP(QELabel);
@@ -38,7 +65,7 @@ FormGalilController::~FormGalilController()
 
 void FormGalilController::motorSelectionChanged()
 {
-    QEComboBox* box = ((QEComboBox*) sender());
+    QComboBox* box = ((QComboBox*) sender());
     int id = box->objectName().split("_")[1].toInt();
     int index = box->currentIndex();
 

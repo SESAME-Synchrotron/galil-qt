@@ -11,6 +11,8 @@
 #include "FormGalilControllerIO.h"
 #include "FormGalilCS.h"
 
+#define MOTORS_COUNT    8
+
 namespace Ui {
 class FormGalilController;
 }
