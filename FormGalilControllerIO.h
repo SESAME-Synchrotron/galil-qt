@@ -1,7 +1,7 @@
 #ifndef FORMGALILCONTROLLERIO_H
 #define FORMGALILCONTROLLERIO_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 
@@ -9,7 +9,7 @@ namespace Ui {
 class FormGalilControllerIO;
 }
 
-class FormGalilControllerIO : public QWidget
+class FormGalilControllerIO : public QMainWindow
 {
     Q_OBJECT
 

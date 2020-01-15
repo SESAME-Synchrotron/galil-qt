@@ -1,7 +1,7 @@
 #ifndef FORMGALILMOTOR_H
 #define FORMGALILMOTOR_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "FormGalilMotorExpert.h"
 
@@ -12,7 +12,7 @@ namespace Ui {
 class FormGalilMotor;
 }
 
-class FormGalilMotor : public QWidget
+class FormGalilMotor : public QMainWindow
 {
     Q_OBJECT
 

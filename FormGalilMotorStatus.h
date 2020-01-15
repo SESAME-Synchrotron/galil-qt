@@ -1,7 +1,7 @@
 #ifndef FORMGALILMOTORSTATUS_H
 #define FORMGALILMOTORSTATUS_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 #include <qepicspv.h>
@@ -12,7 +12,7 @@ namespace Ui {
 class FormGalilMotorStatus;
 }
 
-class FormGalilMotorStatus : public QWidget
+class FormGalilMotorStatus : public QMainWindow
 {
     Q_OBJECT
 

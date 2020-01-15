@@ -1,7 +1,7 @@
 #ifndef FORMGALILCSKINEMATICS_H
 #define FORMGALILCSKINEMATICS_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 
@@ -9,7 +9,7 @@ namespace Ui {
 class FormGalilCSKinematics;
 }
 
-class FormGalilCSKinematics : public QWidget
+class FormGalilCSKinematics : public QMainWindow
 {
     Q_OBJECT
 

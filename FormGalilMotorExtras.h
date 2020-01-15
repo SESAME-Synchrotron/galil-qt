@@ -1,7 +1,7 @@
 #ifndef FORMGALILMOTOREXTRAS_H
 #define FORMGALILMOTOREXTRAS_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 
@@ -9,7 +9,7 @@ namespace Ui {
 class FormGalilMotorExtras;
 }
 
-class FormGalilMotorExtras : public QWidget
+class FormGalilMotorExtras : public QMainWindow
 {
     Q_OBJECT
 

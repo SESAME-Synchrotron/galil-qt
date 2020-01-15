@@ -2,7 +2,7 @@
 #include "ui_FormGalilCS.h"
 
 FormGalilCS::FormGalilCS(QString group, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilCS)
 {
     ui->setupUi(this);

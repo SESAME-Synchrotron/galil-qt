@@ -3,4 +3,4 @@
 git pull
 make distclean
 qmake galil-3-6.pro
-make
+make -j$(nproc)

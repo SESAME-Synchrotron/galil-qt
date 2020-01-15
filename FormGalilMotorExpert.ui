@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilMotorExpert</class>
- <widget class="QWidget" name="FormGalilMotorExpert">
+ <widget class="QMainWindow" name="FormGalilMotorExpert">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,1179 +11,789 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil Motor Expert</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="widgetResizable">
-      <bool>false</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>601</width>
-        <height>831</height>
-       </rect>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>false</bool>
       </property>
-      <widget class="QGroupBox" name="titleGroupBox_7">
+      <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>360</y>
-         <width>590</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string>Servo PID Parameters</string>
-       </property>
-       <widget class="QLabel" name="label_22">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>20</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Proportional</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_23">
-        <property name="geometry">
-         <rect>
-          <x>330</x>
-          <y>20</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Integral</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_24">
-        <property name="geometry">
-         <rect>
-          <x>460</x>
-          <y>20</y>
-          <width>80</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Derivative</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_25">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Parameters</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtPCOF">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).PCOF</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtICOF">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).ICOF</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtDCOF">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).DCOF</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>750</y>
-         <width>90</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>NTM Factor</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>730</y>
-         <width>90</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>NTM</string>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>590</width>
-         <height>60</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string>Calibration</string>
-       </property>
-       <widget class="QEComboBox" name="cbSET">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>70</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).SET</string>
-        </property>
-       </widget>
-       <widget class="QEComboBox" name="cbFOFF">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>20</y>
-          <width>70</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).FOFF</string>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtOFF">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>20</y>
-          <width>240</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).OFF</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-       </widget>
-       <widget class="QEComboBox" name="cbDIR">
-        <property name="geometry">
-         <rect>
-          <x>430</x>
-          <y>20</y>
-          <width>70</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).DIR</string>
-        </property>
-       </widget>
-       <widget class="QEPushButton" name="qepushbutton">
-        <property name="geometry">
-         <rect>
-          <x>510</x>
-          <y>20</y>
-          <width>70</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Sync</string>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).SYNC</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_6">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>160</y>
-         <width>590</width>
-         <height>190</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string>Drive</string>
-       </property>
-       <widget class="QLabel" name="label_13">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>20</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Normal</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_14">
-        <property name="geometry">
-         <rect>
-          <x>330</x>
-          <y>20</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Backlash</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>480</x>
-          <y>20</y>
-          <width>50</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Jog</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Max Speed</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>60</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Speed</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_18">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Base Speed</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_19">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>100</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Acceleration</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_20">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>120</y>
-          <width>130</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Backlash Distance</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_21">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>130</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Move Fraction</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtVMAX">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).VMAX</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtVELO">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>60</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).VELO</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtVBAS">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>80</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).VBAS</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtACCL">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).ACCL</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtBVEL">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>60</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).BVEL</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtBACC">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).BACC</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtBDST">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>120</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).BDST</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtFRAC">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>140</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).FRAC</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtJVEL">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>60</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).JVEL</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtJAR">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).JAR</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_26">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>160</y>
-          <width>130</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Home Speed</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtFRAC_2">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>160</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).HVEL</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="qelabel_2">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>160</y>
-          <width>40</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).EGU</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label">
-        <property name="geometry">
-         <rect>
-          <x>490</x>
-          <y>160</y>
-          <width>21</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>/ s</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
+         <x>0</x>
          <y>0</y>
-         <width>590</width>
-         <height>81</height>
+         <width>601</width>
+         <height>831</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QLabel" name="lblTitle">
+       <widget class="QGroupBox" name="titleGroupBox_7">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>20</y>
-          <width>570</width>
-          <height>51</height>
+          <y>360</y>
+          <width>590</width>
+          <height>80</height>
          </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <pointsize>16</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
+         <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
         </property>
-        <property name="text">
-         <string>Motor Expert</string>
+        <property name="title">
+         <string>Servo PID Parameters</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Proportional</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Integral</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>20</y>
+           <width>80</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Derivative</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Parameters</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtPCOF">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).PCOF</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtICOF">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).ICOF</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtDCOF">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).DCOF</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
        </widget>
-      </widget>
-      <widget class="QELineEdit" name="txtPCOF_2">
-       <property name="geometry">
-        <rect>
-         <x>110</x>
-         <y>730</y>
-         <width>90</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group).NTMF</string>
-       </property>
-       <property name="displayAlarmStateOption" stdset="0">
-        <enum>QEGenericEdit::Never</enum>
-       </property>
-       <property name="addUnits">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_9">
-       <property name="geometry">
-        <rect>
-         <x>330</x>
-         <y>450</y>
-         <width>270</width>
-         <height>310</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string>Readback</string>
-       </property>
-       <widget class="QLabel" name="label_43">
+       <widget class="QLabel" name="label_3">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>60</y>
-          <width>140</width>
+          <y>750</y>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
         <property name="text">
-         <string>Current Direction</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <string>NTM Factor</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_44">
+       <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>80</y>
-          <width>140</width>
+          <y>730</y>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
         <property name="text">
-         <string>Moving</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <string>NTM</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_45">
+       <widget class="QGroupBox" name="titleGroupBox_5">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
+          <y>90</y>
+          <width>590</width>
+          <height>60</height>
          </rect>
         </property>
-        <property name="text">
-         <string>At Home</string>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        <property name="title">
+         <string>Calibration</string>
         </property>
+        <widget class="QEComboBox" name="cbSET">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>70</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).SET</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="cbFOFF">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>20</y>
+           <width>70</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).FOFF</string>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtOFF">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>240</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).OFF</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="cbDIR">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>20</y>
+           <width>70</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).DIR</string>
+         </property>
+        </widget>
+        <widget class="QEPushButton" name="qepushbutton">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>20</y>
+           <width>70</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sync</string>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).SYNC</string>
+         </property>
+        </widget>
        </widget>
-       <widget class="QLabel" name="label_46">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>120</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Motor Position</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_47">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Encoder</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_48">
+       <widget class="QGroupBox" name="titleGroupBox_6">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>160</y>
-          <width>140</width>
-          <height>20</height>
+          <width>590</width>
+          <height>190</height>
          </rect>
         </property>
-        <property name="text">
-         <string>MIP</string>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        <property name="title">
+         <string>Drive</string>
         </property>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>20</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Normal</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Backlash</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>20</y>
+           <width>50</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Jog</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Max Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Base Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Acceleration</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>130</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Backlash Distance</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>130</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Move Fraction</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtVMAX">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).VMAX</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtVELO">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).VELO</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtVBAS">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>80</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).VBAS</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtACCL">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).ACCL</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtBVEL">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).BVEL</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtBACC">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).BACC</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtBDST">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>120</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).BDST</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtFRAC">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>140</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).FRAC</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtJVEL">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).JVEL</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtJAR">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).JAR</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>130</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Home Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtFRAC_2">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>160</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).HVEL</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_2">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>160</y>
+           <width>40</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).EGU</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>160</y>
+           <width>21</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>/ s</string>
+         </property>
+        </widget>
        </widget>
-       <widget class="QLabel" name="label_49">
+       <widget class="QGroupBox" name="titleGroupBox">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>180</y>
-          <width>140</width>
-          <height>20</height>
+          <y>0</y>
+          <width>590</width>
+          <height>81</height>
          </rect>
         </property>
-        <property name="text">
-         <string>Error</string>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        <property name="title">
+         <string/>
         </property>
+        <widget class="QLabel" name="lblTitle">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>570</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Ubuntu</family>
+           <pointsize>16</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Motor Expert</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
        </widget>
-       <widget class="QLabel" name="label_51">
+       <widget class="QELineEdit" name="txtPCOF_2">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>200</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Version</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_52">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>220</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Card Number</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_53">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>240</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Precision</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_54">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>260</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Torque</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblTDIR">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>60</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).TDIR</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblMOVN">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>80</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).MOVN</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblATHM">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>100</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).ATHM</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblRMP">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>120</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RMP</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblREP">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>140</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).REP</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblMIP">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>160</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).MIP</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblDIFF">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>180</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).DIFF</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblVERS">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>200</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).VERS</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELabel" name="lblCARD">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>220</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).CARD</string>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtPREC">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>240</y>
-          <width>100</width>
+          <x>110</x>
+          <y>730</y>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
         <property name="variable" stdset="0">
-         <string>$(group).PREC</string>
+         <string>$(group).NTMF</string>
         </property>
         <property name="displayAlarmStateOption" stdset="0">
          <enum>QEGenericEdit::Never</enum>
@@ -1192,583 +802,975 @@ QGroupBox::title {
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QEComboBox" name="cbCNEN">
+       <widget class="QGroupBox" name="titleGroupBox_9">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>260</y>
-          <width>100</width>
-          <height>20</height>
+          <x>330</x>
+          <y>450</y>
+          <width>270</width>
+          <height>310</height>
          </rect>
         </property>
-        <property name="variable" stdset="0">
-         <string>$(group).CNEN</string>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
         </property>
+        <property name="title">
+         <string>Readback</string>
+        </property>
+        <widget class="QLabel" name="label_43">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Current Direction</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_44">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Moving</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>At Home</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_46">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Motor Position</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_47">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Encoder</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_48">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>MIP</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Error</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_51">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Version</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Card Number</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_53">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>240</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Precision</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_54">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Torque</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblTDIR">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).TDIR</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblMOVN">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>80</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).MOVN</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblATHM">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>100</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).ATHM</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblRMP">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RMP</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblREP">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>140</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).REP</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblMIP">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>160</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).MIP</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblDIFF">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>180</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).DIFF</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblVERS">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>200</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).VERS</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblCARD">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>220</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).CARD</string>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtPREC">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>240</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).PREC</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="cbCNEN">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>260</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).CNEN</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="lblTDIR_3">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).STAT</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_68">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>State 0x</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_69">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Forward Link</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="qelineedit_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>280</y>
+           <width>160</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).FLNK</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnStatus">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>20</y>
+           <width>83</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Status</string>
+         </property>
+        </widget>
        </widget>
-       <widget class="QELabel" name="lblTDIR_3">
+       <widget class="QEComboBox" name="cbURIP_2">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>20</y>
-          <width>100</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).STAT</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_68">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>State 0x</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_69">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>280</y>
+          <x>110</x>
+          <y>750</y>
           <width>90</width>
           <height>20</height>
          </rect>
         </property>
-        <property name="text">
-         <string>Forward Link</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="qelineedit_4">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>280</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
         <property name="variable" stdset="0">
-         <string>$(group).FLNK</string>
+         <string>$(group).NTM</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="btnStatus">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>20</y>
-          <width>83</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Status</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QEComboBox" name="cbURIP_2">
-       <property name="geometry">
-        <rect>
-         <x>110</x>
-         <y>750</y>
-         <width>90</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group).NTM</string>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_8">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>450</y>
-         <width>300</width>
-         <height>270</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string>Motor Resolution</string>
-       </property>
-       <widget class="QLabel" name="label_35">
+       <widget class="QGroupBox" name="titleGroupBox_8">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>20</y>
-          <width>140</width>
-          <height>20</height>
+          <y>450</y>
+          <width>300</width>
+          <height>270</height>
          </rect>
         </property>
-        <property name="text">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
          <string>Motor Resolution</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Motor Resolution</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Encode Resolution</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Readback Resolution</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Retry Deadband</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Max Retries</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Use Encoder</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>160</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Use Readback</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_42">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Readback Delay</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtMRES">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).MRES</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtERES">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>60</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).ERES</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtRRES">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>80</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RRES</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtRDBD">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>100</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RDBD</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtRTRY">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>120</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RTRY</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="cbUEIP">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>140</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).UEIP</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="cbURIP">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>160</y>
+           <width>90</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).URIP</string>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtDLY">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>180</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).DLY</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_50">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RBV In-Link</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_55">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Pre-Move String</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_56">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>240</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Post-Move String</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="qelineedit">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>200</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RDBL</string>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="qelineedit_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>220</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).PREM</string>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="qelineedit_3">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>240</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).POST</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>120</y>
+           <width>70</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).RCNT</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_57">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Step per Revolution</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QELineEdit" name="txtMRES_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>40</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>$(group).SREV</string>
+         </property>
+         <property name="displayAlarmStateOption" stdset="0">
+          <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="addUnits">
+          <bool>false</bool>
+         </property>
+        </widget>
        </widget>
-       <widget class="QLabel" name="label_36">
+       <widget class="QGroupBox" name="titleGroupBox_2">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>60</y>
-          <width>140</width>
-          <height>20</height>
+          <y>770</y>
+          <width>590</width>
+          <height>61</height>
          </rect>
         </property>
-        <property name="text">
-         <string>Encode Resolution</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_37">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Readback Resolution</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_38">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Retry Deadband</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_39">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>120</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Max Retries</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_40">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Use Encoder</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_41">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>160</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Use Readback</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_42">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>180</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Readback Delay</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtMRES">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>20</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).MRES</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtERES">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>60</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).ERES</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtRRES">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>80</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RRES</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtRDBD">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>100</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RDBD</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtRTRY">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>120</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RTRY</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QEComboBox" name="cbUEIP">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>140</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).UEIP</string>
-        </property>
-       </widget>
-       <widget class="QEComboBox" name="cbURIP">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>160</y>
-          <width>90</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).URIP</string>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtDLY">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>180</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).DLY</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_50">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>200</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>RBV In-Link</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_55">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>220</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Pre-Move String</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_56">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>240</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Post-Move String</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="qelineedit">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>200</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RDBL</string>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="qelineedit_2">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>220</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).PREM</string>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="qelineedit_3">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>240</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).POST</string>
-        </property>
-       </widget>
-       <widget class="QELabel" name="qelabel">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>120</y>
-          <width>70</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).RCNT</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_57">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Step per Revolution</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-       </widget>
-       <widget class="QELineEdit" name="txtMRES_2">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>40</y>
-          <width>140</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group).SREV</string>
-        </property>
-        <property name="displayAlarmStateOption" stdset="0">
-         <enum>QEGenericEdit::Never</enum>
-        </property>
-        <property name="addUnits">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>770</y>
-         <width>590</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QPushButton" name="btnClose">
-        <property name="geometry">
-         <rect>
-          <x>490</x>
-          <y>20</y>
-          <width>91</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Close</string>
-        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="btnClose">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>20</y>
+           <width>91</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
        </widget>
       </widget>
      </widget>
-    </widget>
-   </item>
-  </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

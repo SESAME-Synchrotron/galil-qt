@@ -2,7 +2,7 @@
 #include "ui_FormGalilMotorExpert.h"
 
 FormGalilMotorExpert::FormGalilMotorExpert(QString group, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilMotorExpert)
 {
     ui->setupUi(this);

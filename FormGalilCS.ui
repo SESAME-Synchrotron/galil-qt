@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilCS</class>
- <widget class="QWidget" name="FormGalilCS">
+ <widget class="QMainWindow" name="FormGalilCS">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,590 +11,592 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil Coordinate</string>
   </property>
-  <widget class="QGroupBox" name="titleGroupBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>720</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QLabel" name="lblTitle">
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>700</width>
-      <height>51</height>
+      <y>0</y>
+      <width>720</width>
+      <height>81</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
-    <property name="text">
-     <string>Galil Coordinate System</string>
+    <property name="title">
+     <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
+    <widget class="QLabel" name="lblTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>700</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Ubuntu</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+     </property>
+     <property name="text">
+      <string>Galil Coordinate System</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>270</y>
-     <width>720</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QPushButton" name="btnClose">
-    <property name="geometry">
-     <rect>
-      <x>620</x>
-      <y>20</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_5">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>350</width>
-     <height>170</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string>Coordinate System S</string>
-   </property>
-   <widget class="QLabel" name="label">
+   <widget class="QGroupBox" name="titleGroupBox_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>150</width>
-      <height>20</height>
+      <y>270</y>
+      <width>720</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Coordinate System</string>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>20</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QGroupBox" name="titleGroupBox_5">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>150</width>
-      <height>20</height>
+      <y>90</y>
+      <width>350</width>
+      <height>170</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Motors List</string>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
+    <property name="title">
+     <string>Coordinate System S</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Coordinate System</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Motors List</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_NAME_MON</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Moving</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Segments Processed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop All Motors</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go All Motors</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Defer Moves</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>120</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_GO_CMD</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_STOP_CMD</string>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)DEFER_CMD</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)DEFER_STATUS</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>80</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_SEGMENTS_MON</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_4">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_MOVN_STATUS</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_5">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)S_MOTORS_MON</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QELabel" name="qelabel">
+   <widget class="QGroupBox" name="titleGroupBox_6">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>20</y>
-      <width>80</width>
-      <height>20</height>
+      <x>380</x>
+      <y>90</y>
+      <width>350</width>
+      <height>170</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_NAME_MON</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Moving</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Segments Processed</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop All Motors</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go All Motors</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Defer Moves</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="qepushbutton">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>120</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_GO_CMD</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="qepushbutton_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>100</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_STOP_CMD</string>
-    </property>
-   </widget>
-   <widget class="QEComboBox" name="qecombobox">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>140</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)DEFER_CMD</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_2">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>140</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)DEFER_STATUS</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_3">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>80</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_SEGMENTS_MON</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_4">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>60</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_MOVN_STATUS</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_5">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>40</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)S_MOTORS_MON</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_6">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>90</y>
-     <width>350</width>
-     <height>170</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string>Coordinate System T</string>
-   </property>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Coordinate System</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Motors List</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_6">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>20</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_NAME_MON</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Moving</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Segments Processed</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop All Motors</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go All Motors</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>150</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Defer Moves</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="qepushbutton_3">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>120</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_GO_CMD</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="qepushbutton_4">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>100</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stop</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_STOP_CMD</string>
-    </property>
-   </widget>
-   <widget class="QEComboBox" name="qecombobox_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>140</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)DEFER_CMD</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_7">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>140</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)DEFER_STATUS</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_8">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>80</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_SEGMENTS_MON</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_9">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>60</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_MOVN_STATUS</string>
-    </property>
-   </widget>
-   <widget class="QELabel" name="qelabel_10">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>40</y>
-      <width>80</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)T_MOTORS_MON</string>
-    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Coordinate System T</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Coordinate System</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Motors List</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_6">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_NAME_MON</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Moving</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Segments Processed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop All Motors</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go All Motors</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>150</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Defer Moves</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>120</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_GO_CMD</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_STOP_CMD</string>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)DEFER_CMD</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_7">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)DEFER_STATUS</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_8">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>80</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_SEGMENTS_MON</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_9">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_MOVN_STATUS</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_10">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)T_MOTORS_MON</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
