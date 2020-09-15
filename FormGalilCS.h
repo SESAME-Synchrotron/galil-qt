@@ -1,7 +1,7 @@
 #ifndef FORMGALILCS_H
 #define FORMGALILCS_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 
@@ -9,7 +9,7 @@ namespace Ui {
 class FormGalilCS;
 }
 
-class FormGalilCS : public QWidget
+class FormGalilCS : public QMainWindow
 {
     Q_OBJECT
 

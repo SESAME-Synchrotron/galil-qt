@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilMotorStatus</class>
- <widget class="QWidget" name="FormGalilMotorStatus">
+ <widget class="QMainWindow" name="FormGalilMotorStatus">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,523 +11,525 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil Status</string>
   </property>
-  <widget class="QGroupBox" name="titleGroupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>410</y>
-     <width>350</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QPushButton" name="btnClose">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>20</y>
-      <width>91</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>350</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QLabel" name="lblTitle">
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>330</width>
-      <height>51</height>
+      <y>410</y>
+      <width>350</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>20</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>350</width>
+      <height>81</height>
+     </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
-    <property name="text">
-     <string>Motor SSI</string>
+    <property name="title">
+     <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <widget class="QLabel" name="lblTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>330</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Ubuntu</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+     </property>
+     <property name="text">
+      <string>Motor SSI</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSimpleShape" name="led_0">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
     </property>
-    <property name="wordWrap">
-     <bool>true</bool>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
     </property>
    </widget>
-  </widget>
-  <widget class="QSimpleShape" name="led_0">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>90</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_1">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>110</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>130</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>150</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_4">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>170</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_5">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>190</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_6">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>210</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_7">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>230</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_8">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>250</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_9">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>270</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_10">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>290</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_11">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>310</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_12">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>330</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_13">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>350</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_14">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>370</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QSimpleShape" name="led_15">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>390</y>
-     <width>16</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="ledType">
-    <enum>QSimpleShape::Status</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>90</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Direction: Last raw (0: Negative, 1: Positive)</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>110</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DONE: Motion is complete</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>130</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Plus limit has been hit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>150</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Home limit switch status</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>170</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Unused</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>190</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Closed-loop position control enabled</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>210</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Unused</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>230</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>At home position</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>250</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Encoder is present</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>270</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Driver stopped polling</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>290</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Non-zero velocity present</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>310</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Motor supports closed-loop position control</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>330</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Communication Error</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>350</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Minus limit switch hit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>370</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Unused</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_16">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>390</y>
-     <width>300</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Unused</string>
-   </property>
+   <widget class="QSimpleShape" name="led_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Direction: Last raw (0: Negative, 1: Positive)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DONE: Motion is complete</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plus limit has been hit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Home limit switch status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unused</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Closed-loop position control enabled</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>210</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unused</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>At home position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encoder is present</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Driver stopped polling</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Non-zero velocity present</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Motor supports closed-loop position control</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Communication Error</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Minus limit switch hit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unused</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>390</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unused</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>

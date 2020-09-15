@@ -2,7 +2,7 @@
 #include "ui_FormGalilController.h"
 
 FormGalilController::FormGalilController(QString group, QString axis, QString cs, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilController),
     axisMotors{""},
     csMotors{""}

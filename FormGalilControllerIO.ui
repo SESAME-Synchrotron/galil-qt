@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilControllerIO</class>
- <widget class="QWidget" name="FormGalilControllerIO">
+ <widget class="QMainWindow" name="FormGalilControllerIO">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,3415 +11,3417 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil IO</string>
   </property>
-  <widget class="QGroupBox" name="titleGroupBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>670</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QLabel" name="lblTitle">
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>650</width>
-      <height>51</height>
+      <y>0</y>
+      <width>670</width>
+      <height>81</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Ubuntu</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
-    <property name="text">
-     <string>Controller IO</string>
+    <property name="title">
+     <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
+    <widget class="QLabel" name="lblTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>650</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Ubuntu</family>
+       <pointsize>16</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+     </property>
+     <property name="text">
+      <string>Controller IO</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>530</y>
-     <width>671</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QPushButton" name="btnClose">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>20</y>
-      <width>90</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>671</width>
-     <height>211</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string>Inputs</string>
-   </property>
-   <widget class="QLabel" name="label">
+   <widget class="QGroupBox" name="titleGroupBox_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>50</width>
-      <height>20</height>
+      <y>530</y>
+      <width>671</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Byte 0</string>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_0">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
+    <property name="title">
      <string/>
     </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>20</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QELineEdit" name="txtByte0_0">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_1">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_1">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_2">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_3">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_3">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_4">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_4">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_5">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_6">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_6">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte0_7">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte0_7">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_0">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_0">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>20</y>
-      <width>50</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Byte 1</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_1">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_1">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_2">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_2">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_3">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_3">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_4">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_4">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_5">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_5">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_6">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte1_7">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte1_7">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_0">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_0">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_20">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>20</y>
-      <width>50</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Byte 2</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_1">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_1">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_2">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_2">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_3">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_3">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_4">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_4">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_5">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_5">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_6">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_6">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByte2_7">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByte2_7">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_53">
+   <widget class="QGroupBox" name="titleGroupBox_3">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>30</width>
-      <height>20</height>
+      <y>90</y>
+      <width>671</width>
+      <height>211</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Bit 0</string>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
     </property>
+    <property name="title">
+     <string>Inputs</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Byte 0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_0">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_0">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_6">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_6">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte0_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte0_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_0">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Byte 1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_1">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_2">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_6">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte1_7">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte1_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_0">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_0">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Byte 2</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_1">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_1">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_2">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_3">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_3">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_4">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_4">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_5">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_5">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_6">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_6">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByte2_7">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByte2_7">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_53">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_55">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_56">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_57">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_58">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_59">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_60">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_61">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_62">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>60</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_64">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>180</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_65">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_66">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>160</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_68">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>100</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_69">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>140</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>40</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_71">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_72">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>180</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_73">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>80</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_74">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>160</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_75">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>120</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_76">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>100</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_77">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>140</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 5</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label_55">
+   <widget class="QGroupBox" name="titleGroupBox_4">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_56">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 7</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_57">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_58">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>160</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 6</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_59">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_60">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_61">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_62">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>40</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_63">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>60</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_64">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>180</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 7</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_65">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>80</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_66">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>160</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 6</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_67">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>120</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_68">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>100</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_69">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>140</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_70">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>40</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_71">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>60</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_72">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>180</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 7</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_73">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>80</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_74">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>160</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 6</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_75">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>120</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_76">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>100</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_77">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>140</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 5</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="titleGroupBox_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>310</y>
-     <width>671</width>
-     <height>211</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QGroupBox {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-   </property>
-   <property name="title">
-    <string>Outputs</string>
-   </property>
-   <widget class="QLabel" name="label_28">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_0">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_0">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_29">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>60</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Word 0</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_0">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=0</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_0">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_1">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_1">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=1</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_1">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_1">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_30">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 1</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_2">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=2</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_2">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_2">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_31">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 2</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_3">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_3">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=3</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_3">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_3">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_32">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 3</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_4">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_4">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=4</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_4">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_4">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_33">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 4</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_5">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=5</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_5">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_5">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_34">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 5</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_6">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_6">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=6</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_6">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_6">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=6</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_35">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>160</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 6</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_7">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF0_7">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=7</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_7">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON0_7">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=7</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_36">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 7</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_8">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_0">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=8</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_8">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_0">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=8</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_37">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>40</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 8</string>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_1">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=9</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_9">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_1">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=9</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_38">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>60</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 9</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_9">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_2">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=10</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_10">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_2">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=10</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_39">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>80</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 10</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_10">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_3">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=11</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_11">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_3">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=11</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_40">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>100</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 11</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_11">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_4">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=12</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_12">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_4">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=12</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_41">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>120</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 12</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_12">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_5">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=13</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_13">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_5">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=13</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_42">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>140</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 13</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_13">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_6">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=14</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_14">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_6">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=14</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_43">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>160</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 14</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_14">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF1_7">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=15</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut0_15">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON1_7">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=0,bit=15</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_44">
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>180</y>
-      <width>40</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 15</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut0_15">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_0">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=0</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_0">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>40</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_0">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>40</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_45">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>40</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_0">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>40</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_46">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>60</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 1</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_1">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_1">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=1</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_1">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>60</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_1">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>60</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_47">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>80</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 2</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_2">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>80</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_2">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=2</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_2">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>80</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_2">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>80</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_48">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>100</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 3</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_3">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>100</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_3">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=3</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_3">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>100</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_3">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_49">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>120</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 4</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_4">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>120</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_4">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=4</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_4">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>120</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_4">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>120</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=4</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_50">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>140</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 5</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_5">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>140</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_5">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=5</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_5">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>140</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_5">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>140</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_51">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>160</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 6</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_6">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>160</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_6">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=6</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_6">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>160</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_6">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>160</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=6</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_52">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>180</y>
-      <width>30</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bit 7</string>
-    </property>
-   </widget>
-   <widget class="QESimpleShape" name="ledByteOut1_7">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>180</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="colour0" stdset="0">
-     <color>
-      <red>240</red>
-      <green>5</green>
-      <blue>5</blue>
-     </color>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteOFF2_7">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=7</string>
-    </property>
-    <property name="clickText">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QELineEdit" name="txtByteOut1_7">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>180</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="variable" stdset="0">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QEPushButton" name="btnByteON2_7">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>180</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="variable" stdset="0">
-     <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
-    </property>
-    <property name="variableSubstitutions" stdset="0">
-     <string>byte=1,bit=7</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_54">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>20</y>
-      <width>50</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Word 1</string>
-    </property>
+      <y>310</y>
+      <width>671</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Outputs</string>
+    </property>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_0">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_0">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Word 0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_0">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=0</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_0">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_1">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_1">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=1</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_1">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 1</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=2</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 2</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 3</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_4">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 4</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=5</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 5</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_6">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_6">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=6</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_6">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 6</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF0_7">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=7</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON0_7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 7</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_0">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=8</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_0">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=8</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 8</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_1">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=9</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_9">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_1">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=9</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 9</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=10</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_10">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 10</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_10">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_3">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=11</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_11">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=11</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>100</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 11</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_11">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=12</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_12">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_4">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=12</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 12</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_12">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_5">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=13</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_13">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_5">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=13</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>140</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 13</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_13">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=14</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_14">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_6">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=14</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>160</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 14</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_14">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF1_7">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=15</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut0_15">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON1_7">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=0,bit=15</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>180</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 15</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut0_15">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_0">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=0</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_0">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_0">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>40</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>40</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_0">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_1">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_1">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=1</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_1">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_1">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>60</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>80</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 2</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=2</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_2">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_2">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>80</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>100</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 3</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_3">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_3">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_3">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>100</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>120</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 4</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_4">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_4">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_4">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>120</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>140</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 5</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_5">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=5</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_5">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>140</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_5">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>140</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_51">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>160</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 6</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_6">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=6</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_6">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>160</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_52">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>180</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bit 7</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledByteOut1_7">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>180</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteOFF2_7">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=7</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="txtByteOut1_7">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnByteON2_7">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>180</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group)Galil$(byte)Bo$(bit)_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>byte=1,bit=7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_54">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Word 1</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

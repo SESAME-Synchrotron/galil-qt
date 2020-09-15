@@ -2,7 +2,7 @@
 #include "ui_FormGalilCSKinematics.h"
 
 FormGalilCSKinematics::FormGalilCSKinematics(QString group, QString cs[], QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilCSKinematics)
 {
     ui->setupUi(this);

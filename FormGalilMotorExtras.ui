@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilMotorExtras</class>
- <widget class="QWidget" name="FormGalilMotorExtras">
+ <widget class="QMainWindow" name="FormGalilMotorExtras">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,1426 +11,1428 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil Extras</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="widgetResizable">
-      <bool>false</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>501</width>
-        <height>811</height>
-       </rect>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>false</bool>
       </property>
-      <widget class="QELabel" name="qelabel_8">
+      <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
-         <x>360</x>
-         <y>230</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ON_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_13">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>630</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_JAH_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_19">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>490</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Encoder Stall Time</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_17">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>350</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKEPORT_MON</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_4">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>210</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_WLP_CMD</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_26">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>610</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_UINDEX_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>310</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKEONDELAY_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_7">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>330</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_4">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>350</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKEPORT_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
+         <x>0</x>
          <y>0</y>
-         <width>490</width>
-         <height>81</height>
+         <width>501</width>
+         <height>811</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QLabel" name="lblTitle">
+       <widget class="QELabel" name="qelabel_8">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>230</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ON_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_13">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>630</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_JAH_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>20</y>
-          <width>470</width>
-          <height>51</height>
+          <y>490</y>
+          <width>180</width>
+          <height>20</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <pointsize>16</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
-        </property>
         <property name="text">
-         <string>Motor Extras</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
+         <string>Encoder Stall Time</string>
         </property>
        </widget>
-      </widget>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>190</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Auxiliary Encoder</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_8">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>230</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Amplifier</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_20">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>450</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ERR_MON</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>130</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Connected</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_12">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>330</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Brake</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_29">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>690</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_USERDATA_MON</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_32">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>270</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Amp On/Brake Off Delay</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_21">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>530</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>EGU After Limit</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_7">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>210</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Wrong Limit Protection</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_28">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>670</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>User Data Deadband</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_17">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>430</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Error Limit (CTS)</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_7">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>490</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ESTALLTIME_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_22">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>570</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Home Allowed</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_28">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>650</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_JAHV_MON</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_11">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>310</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Brake ON Delay</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>190</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AENCTYPE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_13">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>350</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Brake ON/OFF Port</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_8">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>510</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_STEPSMOOTH_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_22">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>490</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ESTALLTIME_MON</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_10">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>570</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_HOMEALLOWED_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_20">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>510</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Step Smooth Factor</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>110</y>
-         <width>300</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group).NAME</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_10">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>290</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Amp OFF Delay</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_19">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>430</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ERRLIMIT_MON</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_6">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>430</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ERRLIMIT_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_2">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>290</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_OFFDELAY_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_31">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>730</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_VELOCITYEGU_MON</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>270</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ONDELAY_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_11">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>590</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_USWITCH_CMD</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_8">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>370</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AUTOBRAKE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_21">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>470</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ESTALL_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_31">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>730</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Servo Velocity (EGU/s)</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_25">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>610</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Use Index When Homing</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_16">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>570</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_HOMEALLOWED_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_11">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>290</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_OFFDELAY_MON</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_12">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>610</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_UINDEX_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_18">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>470</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Encoder Stall</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>170</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_MENCTYPE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_27">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>650</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Jog After Home to (EGU)</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_9">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>410</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_OFFONERR_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_23">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>550</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Limit Disable</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>150</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Type</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_33">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>450</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Error (CTS)</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_30">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>710</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_VELOCITYRAW_MON</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_18">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>390</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_STOPDELAY_MON</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_10">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>270</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ONDELAY_MON</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_32">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>550</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_LIMITDISABLE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_6">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>190</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AENCTYPE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_14">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>550</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_LIMITDISABLE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_9">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>530</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_EGUAFTLIMIT_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>170</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_MENCTYPE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_5">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>150</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_MTRTYPE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_7">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>210</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_WLP_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_23">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>510</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_STEPSMOOTH_MON</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_10">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>650</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_JAHV_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_27">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>630</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_JAH_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_24">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>530</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_EGUAFTLIMIT_MON</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_4">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>130</y>
-         <width>300</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_MCONN_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_5">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>230</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_ON_CMD</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_14">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>370</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AUTOBRAKE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>110</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Name</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_15">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>410</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_OFFONERR_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_13">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>330</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKE_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_30">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>710</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Servo Velocity (CTS/s)</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_26">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>630</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Jog After Home</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_9">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>250</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Amp Auto ON/OFF</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_2">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>90</y>
-         <width>300</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AXIS_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_25">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>590</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_USWITCH_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_14">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>370</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Brake Auto ON/OFF</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_6">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>250</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AUTOONOFF_CMD</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_12">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>310</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_BRAKEONDELAY_MON</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>170</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Main Encoder</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="qelabel_9">
-       <property name="geometry">
-        <rect>
-         <x>360</x>
-         <y>250</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_AUTOONOFF_STATUS</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_29">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>690</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>User Data</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_15">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>390</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Stop Delay</string>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>750</y>
-         <width>490</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QPushButton" name="btnClose">
+       <widget class="QELabel" name="qelabel_17">
         <property name="geometry">
          <rect>
-          <x>390</x>
-          <y>20</y>
-          <width>90</width>
-          <height>30</height>
+          <x>360</x>
+          <y>350</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEPORT_MON</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_4">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>210</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_WLP_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_26">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>610</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_UINDEX_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>310</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEONDELAY_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>330</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_4">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>350</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEPORT_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="titleGroupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>490</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="lblTitle">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>470</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Ubuntu</family>
+           <pointsize>16</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Motor Extras</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>180</width>
+          <height>20</height>
          </rect>
         </property>
         <property name="text">
-         <string>Close</string>
+         <string>Auxiliary Encoder</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Amplifier</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_20">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>450</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ERR_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Connected</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Brake</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_29">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>690</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_USERDATA_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>270</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Amp On/Brake Off Delay</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>530</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EGU After Limit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>210</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Wrong Limit Protection</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>670</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>User Data Deadband</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Error Limit (CTS)</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>490</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ESTALLTIME_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>570</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Home Allowed</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_28">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>650</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_JAHV_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Brake ON Delay</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>190</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AENCTYPE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>350</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Brake ON/OFF Port</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_8">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>510</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STEPSMOOTH_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_22">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>490</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ESTALLTIME_MON</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_10">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>570</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_HOMEALLOWED_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>510</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Step Smooth Factor</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>110</y>
+          <width>300</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group).NAME</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Amp OFF Delay</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_19">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>430</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ERRLIMIT_MON</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>430</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ERRLIMIT_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>290</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_OFFDELAY_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_31">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>730</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_VELOCITYEGU_MON</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>270</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ONDELAY_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>590</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_USWITCH_CMD</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_8">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>370</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AUTOBRAKE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_21">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>470</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ESTALL_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>730</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Servo Velocity (EGU/s)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>610</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Use Index When Homing</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_16">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>570</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_HOMEALLOWED_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_11">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>290</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_OFFDELAY_MON</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_12">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>610</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_UINDEX_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>470</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Encoder Stall</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_MENCTYPE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>650</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Jog After Home to (EGU)</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_9">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>410</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_OFFONERR_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>550</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Limit Disable</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Type</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>450</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Error (CTS)</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_30">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>710</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_VELOCITYRAW_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_18">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>390</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STOPDELAY_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_10">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>270</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ONDELAY_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_32">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>550</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_LIMITDISABLE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_6">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>190</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AENCTYPE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_14">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>550</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_LIMITDISABLE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_9">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>530</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_EGUAFTLIMIT_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>170</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_MENCTYPE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_5">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>150</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_MTRTYPE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_7">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>210</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_WLP_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_23">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>510</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STEPSMOOTH_MON</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_10">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>650</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_JAHV_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_27">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>630</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_JAH_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_24">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>530</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_EGUAFTLIMIT_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_4">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>130</y>
+          <width>300</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_MCONN_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_5">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>230</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ON_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_14">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>370</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AUTOBRAKE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Name</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_15">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>410</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_OFFONERR_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_13">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>330</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKE_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>710</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Servo Velocity (CTS/s)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>630</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Jog After Home</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Amp Auto ON/OFF</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>90</y>
+          <width>300</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AXIS_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_25">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>590</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_USWITCH_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Brake Auto ON/OFF</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>250</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AUTOONOFF_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_12">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>310</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEONDELAY_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Main Encoder</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_9">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>250</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AUTOONOFF_STATUS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>690</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>User Data</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>390</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Stop Delay</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="titleGroupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>750</y>
+          <width>490</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="btnClose">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>20</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_5">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>390</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STOPDELAY_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>410</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor OFF ON Error</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor Axis</string>
+        </property>
+       </widget>
+       <widget class="QEComboBox" name="qecombobox_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>150</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_MTRTYPE_CMD</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>590</y>
+          <width>180</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Use Switch When Homing</string>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>670</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_USERDATADEADB_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
         </property>
        </widget>
       </widget>
-      <widget class="QENumericEdit" name="qenumericedit_5">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>390</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_STOPDELAY_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_16">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>410</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor OFF ON Error</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Motor Axis</string>
-       </property>
-      </widget>
-      <widget class="QEComboBox" name="qecombobox_2">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>150</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_MTRTYPE_CMD</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_24">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>590</y>
-         <width>180</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Use Switch When Homing</string>
-       </property>
-      </widget>
-      <widget class="QENumericEdit" name="qenumericedit_11">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>670</y>
-         <width>160</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_USERDATADEADB_SP</string>
-       </property>
-       <property name="variableSubstitutions" stdset="0">
-        <string/>
-       </property>
-      </widget>
      </widget>
-    </widget>
-   </item>
-  </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

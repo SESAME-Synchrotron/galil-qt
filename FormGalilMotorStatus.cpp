@@ -2,7 +2,7 @@
 #include "ui_FormGalilMotorStatus.h"
 
 FormGalilMotorStatus::FormGalilMotorStatus(QString group, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilMotorStatus)
 {
     ui->setupUi(this);

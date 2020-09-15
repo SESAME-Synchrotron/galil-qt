@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FormGalilCSKinematics</class>
- <widget class="QWidget" name="FormGalilCSKinematics">
+ <widget class="QMainWindow" name="FormGalilCSKinematics">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,1133 +11,1135 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Galil CS Kinematics</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="widgetResizable">
-      <bool>false</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>483</width>
-        <height>703</height>
-       </rect>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>false</bool>
       </property>
-      <widget class="QLabel" name="label_37">
+      <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>530</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>N</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_4">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>200</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMB_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_9">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>260</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORME_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>60</x>
-         <y>160</y>
-         <width>80</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Description</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>110</y>
-         <width>350</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CSMotor reverse transform equations (new setpoints)</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_21">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>320</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>H</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_25">
-       <property name="geometry">
-        <rect>
-         <x>60</x>
-         <y>410</y>
-         <width>80</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Description</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_35">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>510</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>M</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="lblName">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>90</y>
-         <width>401</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group).NAME</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_38">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>550</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_8">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>240</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMD_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_12">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>240</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_26">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>430</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_31">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>470</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>K</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_23">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>380</y>
-         <width>350</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CS Motors = Description  = real motor (eg. I=B-A)</string>
-       </property>
-      </widget>
-      <widget class="QELabel" name="lblError">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>610</y>
-         <width>401</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(P)ERROR_MON</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_34">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>510</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_24">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>410</y>
-         <width>80</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Transform</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_7">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>160</y>
-         <width>80</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Transform</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformP">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>570</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor16)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_27">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>430</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>I</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_19">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>300</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>G</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_30">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>470</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionO">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>550</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor15)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>180</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformK">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>470</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor11)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_14">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>300</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMG_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_41">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>570</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>P</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_8">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>200</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformI">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>430</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor9)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_33">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>490</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>L</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_36">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>530</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_2">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>180</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMA_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionJ">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>450</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor10)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_13">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>240</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>D</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_9">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>200</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>B</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformN">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>530</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor14)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_14">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>260</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_13">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>300</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMG_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>180</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>A</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionL">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>490</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor12)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_11">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>280</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMF_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_39">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>550</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>O</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_10">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>220</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformL">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>490</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor12)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionN">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>530</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor14)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>640</y>
-         <width>471</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QPushButton" name="btnClose">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>20</y>
-          <width>90</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Close</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_10">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>260</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORME_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_15">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>320</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMH_SP</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>130</y>
-         <width>350</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Real motors = Description = CSMotor (eg. A=I-J/2)</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_3">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>200</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMB_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_5">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>220</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMC_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformO">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>550</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor15)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_7">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>240</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMD_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_16">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>320</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMH_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QGroupBox" name="titleGroupBox">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
+         <x>0</x>
          <y>0</y>
-         <width>471</width>
-         <height>81</height>
+         <width>483</width>
+         <height>703</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QGroupBox {
-	background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-}</string>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <widget class="QLabel" name="lblTitle">
+       <widget class="QLabel" name="label_37">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>20</y>
-          <width>451</width>
-          <height>51</height>
+          <y>530</y>
+          <width>20</width>
+          <height>20</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <pointsize>16</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
+        <property name="text">
+         <string>N</string>
         </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel#mainTitle {
-	font: 16pt &quot;Ubuntu&quot;;
-}</string>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>200</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMB_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_9">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>260</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORME_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>160</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
         </property>
         <property name="text">
-         <string>Galil CS Motor Kinematics</string>
+         <string>Description</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
-        <property name="wordWrap">
-         <bool>true</bool>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>350</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CSMotor reverse transform equations (new setpoints)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>H</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>410</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Description</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>510</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>M</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="lblName">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>90</y>
+          <width>401</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group).NAME</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>550</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_8">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMD_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>240</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>430</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>470</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>K</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
+          <width>350</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CS Motors = Description  = real motor (eg. I=B-A)</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="lblError">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>610</y>
+          <width>401</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P)ERROR_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>510</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>410</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Transform</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>160</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Transform</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformP">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>570</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor16)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>300</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>G</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>470</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionO">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>550</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor15)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>180</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformK">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>470</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor11)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_14">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>300</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMG_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>570</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>200</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformI">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>430</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor9)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>490</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>L</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>530</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>180</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMA_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionJ">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>450</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor10)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformN">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>530</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor14)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>260</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_13">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>300</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMG_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionL">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>490</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor12)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>280</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMF_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>550</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>220</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformL">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>490</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor12)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionN">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>530</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor14)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="titleGroupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>640</y>
+          <width>471</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="btnClose">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>20</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>260</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORME_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_15">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>320</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMH_SP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>350</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Real motors = Description = CSMotor (eg. A=I-J/2)</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>200</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMB_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_5">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>220</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMC_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformO">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>550</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor15)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>240</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMD_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_16">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>320</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMH_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="titleGroupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>471</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="lblTitle">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>451</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Ubuntu</family>
+           <pointsize>16</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel#mainTitle {
+ 	font: 16pt &quot;Ubuntu&quot;;
+ }</string>
+         </property>
+         <property name="text">
+          <string>Galil CS Motor Kinematics</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>280</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>70</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CS Motor</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>570</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMC_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>610</y>
+          <width>70</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Controller</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>450</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>J</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionI">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>430</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor9)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_12">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>280</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMF_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>300</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>180</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_RTRANSFORMA_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>450</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformJ">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>450</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor10)_FTRANSFORM_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionK">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>470</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor11)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>490</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionP">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>570</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor16)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtDescriptionM">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>510</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor13)_FTRANSFORM_SP.DESC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>320</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>360</y>
+          <width>350</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CSMotor forward transform equations (readbacks)</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="txtTransformM">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>510</y>
+          <width>280</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(motor13)_FTRANSFORM_SP</string>
         </property>
        </widget>
       </widget>
-      <widget class="QLabel" name="label_16">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>280</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>90</y>
-         <width>70</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CS Motor</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_40">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>570</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_6">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>220</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMC_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_42">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>610</y>
-         <width>70</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Controller</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_17">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>280</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>F</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_29">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>450</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>J</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_11">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>220</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>C</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_15">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>260</y>
-         <width>20</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>E</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionI">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>430</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor9)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit_12">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>280</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMF_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_18">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>300</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="qelineedit">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>180</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(group)_RTRANSFORMA_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_28">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>450</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformJ">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>450</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor10)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionK">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>470</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor11)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_32">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>490</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionP">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>570</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor16)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtDescriptionM">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>510</y>
-         <width>140</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor13)_FTRANSFORM_SP.DESC</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_20">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>320</y>
-         <width>10</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_22">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>360</y>
-         <width>350</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CSMotor forward transform equations (readbacks)</string>
-       </property>
-      </widget>
-      <widget class="QELineEdit" name="txtTransformM">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>510</y>
-         <width>280</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="variable" stdset="0">
-        <string>$(motor13)_FTRANSFORM_SP</string>
-       </property>
-      </widget>
      </widget>
-    </widget>
-   </item>
-  </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

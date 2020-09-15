@@ -1,7 +1,7 @@
 #ifndef FORMGALILCONTROLLER_H
 #define FORMGALILCONTROLLER_H
 
-#include <QWidget>
+#include <QMainWindow>
 
 #include "macros.h"
 #include "FormGalilMotor.h"
@@ -17,7 +17,7 @@ namespace Ui {
 class FormGalilController;
 }
 
-class FormGalilController : public QWidget
+class FormGalilController : public QMainWindow
 {
     Q_OBJECT
 

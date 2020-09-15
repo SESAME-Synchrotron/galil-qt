@@ -2,7 +2,7 @@
 #include "ui_FormGalilMotorSSI.h"
 
 FormGalilMotorSSI::FormGalilMotorSSI(QString group, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilMotorSSI)
 {
     ui->setupUi(this);

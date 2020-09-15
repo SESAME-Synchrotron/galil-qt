@@ -2,7 +2,7 @@
 #include "ui_FormGalilControllerIO.h"
 
 FormGalilControllerIO::FormGalilControllerIO(QString group, QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::FormGalilControllerIO)
 {
     ui->setupUi(this);
