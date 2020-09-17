@@ -13,7 +13,6 @@
   <property name="windowTitle">
    <string>Galil</string>
   </property>
-<<<<<<< HEAD
   <widget class="QGroupBox" name="titleGroupBox">
    <property name="geometry">
     <rect>
@@ -47,7 +46,6 @@ QGroupBox::title {
       <y>20</y>
       <width>720</width>
       <height>51</height>
-=======
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="titleGroupBox">
     <property name="geometry">
@@ -56,7 +54,6 @@ QGroupBox::title {
       <y>0</y>
       <width>741</width>
       <height>81</height>
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
      </rect>
     </property>
     <property name="styleSheet">
@@ -176,7 +173,6 @@ QGroupBox::title {
      <string>Controller Address</string>
     </property>
    </widget>
-<<<<<<< HEAD
   </widget>
   <widget class="QGroupBox" name="titleGroupBox_2">
    <property name="geometry">
@@ -211,7 +207,6 @@ QGroupBox::title {
       <y>20</y>
       <width>90</width>
       <height>30</height>
-=======
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
@@ -219,14 +214,12 @@ QGroupBox::title {
       <y>130</y>
       <width>160</width>
       <height>20</height>
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
      </rect>
     </property>
     <property name="text">
      <string>Communication Status</string>
     </property>
    </widget>
-<<<<<<< HEAD
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -724,7 +717,6 @@ QGroupBox::title {
    <item>
     <property name="text">
      <string>User Array</string>
-=======
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
@@ -733,7 +725,6 @@ QGroupBox::title {
       <width>160</width>
       <height>20</height>
      </rect>
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
     </property>
     <property name="text">
      <string>Controller Start Status</string>
@@ -787,7 +778,6 @@ QGroupBox::title {
       <height>20</height>
      </rect>
     </property>
-<<<<<<< HEAD
    </item>
   </widget>
   <widget class="QComboBox" name="comboBox_3">
@@ -800,8 +790,6 @@ QGroupBox::title {
     </rect>
    </property>
    <item>
-=======
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
     <property name="text">
      <string>EtherCat Capable</string>
     </property>
@@ -834,7 +822,6 @@ QGroupBox::title {
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
     </property>
-<<<<<<< HEAD
    </item>
   </widget>
   <widget class="QPushButton" name="btnIO">
@@ -865,10 +852,8 @@ QGroupBox::title {
    <item>
     <property name="text">
      <string>Motor A</string>
-=======
     <property name="variable" stdset="0">
      <string>$(group)ADDRESS_MON</string>
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
     </property>
    </widget>
    <widget class="QELabel" name="qelabel_3">
@@ -2049,7 +2034,6 @@ QGroupBox::title {
     <property name="text">
      <string>Coordinate Systems</string>
     </property>
-<<<<<<< HEAD
    </item>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -2180,9 +2164,7 @@ QGroupBox::title {
    <property name="text">
     <string>Coordinate Systems</string>
    </property>
-=======
    </widget>
->>>>>>> afbc6cd835afdbcc8119b2b3ed742fd45eebe37f
   </widget>
  </widget>
  <customwidgets>
