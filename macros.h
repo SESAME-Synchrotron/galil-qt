@@ -8,6 +8,9 @@
 #include <QFile>
 #include <QPushButton>
 
+void showUI(QWidget* widget);
+void loadUI(QString fileName);
+
 #define CONNECT_CLOSE_BUTTON \
     QObject::connect(this->ui->btnClose, SIGNAL(clicked()), this, SLOT(close())); \
 
@@ -15,11 +18,7 @@
     foreach (CLASS* widget, this->findChildren<CLASS*>()) \
     { \
         widget->setVariableNameSubstitutionsProperty("group=" + this->group); \
-    } \
-
-#define SHOW_UI(X) \
-    this->X->setGeometry(QStyle::alignedRect(Qt::LeftToRight, Qt::AlignCenter, this->X->size(), qApp->desktop()->availableGeometry())); \
-    this->X->show();
+    }
 
 #define STRING(X) \
     QString::number(X) \
@@ -27,7 +26,13 @@
 #define FIX_SIZE \
     setFixedSize(width(), height()) \
 
-void _SHOW_UI(QWidget* widget);
-void loadUI(QString fileName);
+#define COLOR_DARKGREEN QColor(20, 60, 20)
+
+#define OPEN_UI(object, CLASS, ...)      \
+    if(!object || !object->isVisible())  \
+        object = new CLASS(__VA_ARGS__); \
+    showUI(object);                    \
+
+#define TITLE_MAIN "SESAME Control System"
 
 #endif // _MACROS_H
