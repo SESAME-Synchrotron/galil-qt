@@ -31,7 +31,7 @@ FormGalilMotor::~FormGalilMotor()
 void FormGalilMotor::on_btnExpert_clicked()
 {
     this->expert = new FormGalilMotorExpert(this->group);
-    _SHOW_UI(expert);
+    showUI(expert);
 }
 
 void FormGalilMotor::on_btnStop_clicked()

@@ -77,17 +77,17 @@ void FormGalilController::motorSelectionChanged()
         {
         case 1:
             this->motor = new FormGalilMotor(motorName);
-            _SHOW_UI(motor);
+            showUI(motor);
             break;
 
         case 2:
             this->extras = new FormGalilMotorExtras(motorName);
-            _SHOW_UI(extras);
+            showUI(extras);
             break;
 
         case 3:
             this->ssi = new FormGalilMotorSSI(motorName);
-            _SHOW_UI(ssi);
+            showUI(ssi);
             break;
 
         case 4:
@@ -109,12 +109,12 @@ void FormGalilController::motorSelectionChanged()
         {
         case 1:
             this->motor = new FormGalilMotor(motorName);
-            _SHOW_UI(motor);
+            showUI(motor);
             break;
 
         case 2:
             this->csKinmetics = new FormGalilCSKinematics(motorName, this->csMotors);
-            _SHOW_UI(csKinmetics);
+            showUI(csKinmetics);
             break;
 
         default:
@@ -128,11 +128,11 @@ void FormGalilController::motorSelectionChanged()
 void FormGalilController::on_btnIO_clicked()
 {
     this->io = new FormGalilControllerIO(this->group);
-    _SHOW_UI(io);
+    showUI(io);
 }
 
 void FormGalilController::on_btnCS_clicked()
 {
     this->cs = new FormGalilCS(this->group);
-    _SHOW_UI(cs);
+    showUI(cs);
 }
