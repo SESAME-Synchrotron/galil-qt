@@ -1481,6 +1481,12 @@
          <property name="displayAlarmStateOption" stdset="0">
           <enum>QEGenericEdit::Never</enum>
          </property>
+         <property name="precision">
+          <number>11</number>
+         </property>
+         <property name="useDbPrecision">
+          <bool>false</bool>
+         </property>
          <property name="addUnits">
           <bool>false</bool>
          </property>
@@ -1499,6 +1505,12 @@
          </property>
          <property name="displayAlarmStateOption" stdset="0">
           <enum>QEGenericEdit::Never</enum>
+         </property>
+         <property name="precision">
+          <number>11</number>
+         </property>
+         <property name="useDbPrecision">
+          <bool>false</bool>
          </property>
          <property name="addUnits">
           <bool>false</bool>

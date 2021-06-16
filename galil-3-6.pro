@@ -8,7 +8,7 @@ QT       += core gui uitools xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = galil-qt
+TARGET = $$(HOME)/bin/galil-qt
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
