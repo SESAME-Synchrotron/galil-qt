@@ -205,7 +205,7 @@
      </color>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSSTATS_TIMEOUT</string>
+     <string>$(group)_BISSSTAT_TIMEOUT</string>
     </property>
    </widget>
    <widget class="QESimpleShape" name="qesimpleshape_2">
@@ -228,7 +228,7 @@
      </color>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSSTATS_CRC</string>
+     <string>$(group)_BISSSTAT_CRC</string>
     </property>
    </widget>
    <widget class="QESimpleShape" name="qesimpleshape_3">
@@ -251,7 +251,7 @@
      </color>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSSTATS_WARN</string>
+     <string>$(group)_BISSSTAT_WARN</string>
     </property>
    </widget>
    <widget class="QESimpleShape" name="qesimpleshape_4">
@@ -274,7 +274,7 @@
      </color>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSSTATS_ERROR</string>
+     <string>$(group)_BISSSTAT_ERROR</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
