@@ -11,6 +11,7 @@ FormGalilMotorBISS::FormGalilMotorBISS(QString group, QWidget *parent) :
     SET_GROUP(QELabel);
     SET_GROUP(QEComboBox);
     SET_GROUP(QELineEdit);
+    SET_GROUP(QESimpleShape);
     CONNECT_CLOSE_BUTTON;
 }
 
