@@ -422,7 +422,7 @@
      <enum>QFrame::StyledPanel</enum>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSSTAT_POLL_MON</string>
+     <string>$(group)_BISSSTAT_POLL</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
@@ -464,7 +464,7 @@
      <enum>QFrame::StyledPanel</enum>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSLEVEL_MON</string>
+     <string>$(group)_BISSLEVEL_STATUS</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
@@ -493,7 +493,7 @@
      <enum>QFrame::StyledPanel</enum>
     </property>
     <property name="variable" stdset="0">
-     <string>$(group)_BISSINPUT_MON</string>
+     <string>$(group)_BISSINPUT_STATUS</string>
     </property>
    </widget>
    <widget class="QEComboBox" name="qecombobox_3">
