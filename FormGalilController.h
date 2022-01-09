@@ -10,6 +10,7 @@
 #include "FormGalilCSKinematics.h"
 #include "FormGalilControllerIO.h"
 #include "FormGalilCS.h"
+#include "FormGalilMotorBISS.h"
 
 #define MOTORS_COUNT    8
 
@@ -41,6 +42,7 @@ private:
     FormGalilCSKinematics* csKinmetics;
     FormGalilControllerIO* io;
     FormGalilCS* cs;
+    FormGalilMotorBISS* biss;
 
     QString group;
     QString axisMotors[8];

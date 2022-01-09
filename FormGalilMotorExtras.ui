@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>531</width>
-    <height>841</height>
+    <height>911</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,8 +25,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>501</width>
-         <height>811</height>
+         <width>511</width>
+         <height>891</height>
         </rect>
        </property>
        <widget class="QELabel" name="qelabel_8">
@@ -1308,7 +1308,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>750</y>
+          <y>820</y>
           <width>490</width>
           <height>61</height>
          </rect>
@@ -1426,6 +1426,141 @@
         </property>
         <property name="variableSubstitutions" stdset="0">
          <string/>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_12">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>760</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPGAIN_CMD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_13">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>780</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPCLGAIN_CMD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QENumericEdit" name="qenumericedit_14">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>800</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPLC_SP</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_33">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>760</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPGAIN_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_34">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>780</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPCLGAIN_MON</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel_35">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>800</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPLC_MON</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>760</y>
+          <width>190</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Amplifier Gain</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>780</y>
+          <width>190</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Current Loop Amplifier Gain</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>800</y>
+          <width>190</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Low Current Mode</string>
         </property>
        </widget>
       </widget>

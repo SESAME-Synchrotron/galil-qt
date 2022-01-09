@@ -24,6 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+    FormGalilMotorBISS.cpp \
         main.cpp \
         mainwindow.cpp \
     FormGalilMotorSSI.cpp \
@@ -39,6 +40,7 @@ SOURCES += \
     FormGalilMotorStatus.cpp
 
 HEADERS += \
+    FormGalilMotorBISS.h \
         mainwindow.h \
     FormGalilMotorSSI.h \
     FormGalilMotor.h \
@@ -53,6 +55,7 @@ HEADERS += \
     FormGalilMotorStatus.h
 
 FORMS += \
+    FormGalilMotorBISS.ui \
         mainwindow.ui \
     FormGalilMotorExtras.ui \
     FormGalilMotorExpert.ui \

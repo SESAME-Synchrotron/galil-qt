@@ -13,7 +13,6 @@ FormGalilController::FormGalilController(QString group, QString axis, QString cs
     this->group += ":";
 
     QStringList items = axis.split(",");
-    std::cout << items.size() << std::endl;
     if(items.size() != MOTORS_COUNT)
     {
         std::cout << "Invalid Motors Count." << std::endl;
@@ -56,6 +55,8 @@ FormGalilController::FormGalilController(QString group, QString axis, QString cs
     {
         QObject::connect(box, SIGNAL(currentIndexChanged(int)), this, SLOT(motorSelectionChanged()));
     }
+
+    this->biss = NULL;
 }
 
 FormGalilController::~FormGalilController()
@@ -91,6 +92,8 @@ void FormGalilController::motorSelectionChanged()
             break;
 
         case 4:
+            this->biss = new FormGalilMotorBISS(motorName);
+            showUI(this->biss);
             break;
 
         case 5:
