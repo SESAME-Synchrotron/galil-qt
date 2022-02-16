@@ -22,10 +22,9 @@ FormGalilController::FormGalilController(QString group, QString axis, QString cs
     for(int i = 0; i < items.size(); i++)
     {
         if(!items[i].isEmpty())
-        {
-            this->findChild<QComboBox*>("cbMotorA_" + QString::number(i + 1))->setEnabled(true);
             this->axisMotors[i] = items[i];
-        }
+        else
+            this->axisMotors[i] = (QChar)(i + 65);
     }
 
     if(!cs.isEmpty())
@@ -38,11 +37,11 @@ FormGalilController::FormGalilController(QString group, QString axis, QString cs
         }
         for(int i = 0; i < items.size(); i++)
         {
+            this->findChild<QComboBox*>("cbMotorA_" + QString::number(i + 9))->setEnabled(true);
             if(!items[i].isEmpty())
-            {
-                this->findChild<QComboBox*>("cbMotorA_" + QString::number(i + 9))->setEnabled(true);
                 this->csMotors[i] = items[i];
-            }
+            else
+                this->csMotors[i] = (QChar)(i + 73);
         }
     }
 

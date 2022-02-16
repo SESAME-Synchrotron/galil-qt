@@ -12,7 +12,7 @@ FormGalilMotorExtras::FormGalilMotorExtras(QString group, QWidget *parent) :
     CONNECT_CLOSE_BUTTON;
     SET_GROUP(QELabel);
     SET_GROUP(QEComboBox);
-    SET_GROUP(QENumericEdit);
+    SET_GROUP(QELineEdit);
 }
 
 FormGalilMotorExtras::~FormGalilMotorExtras()

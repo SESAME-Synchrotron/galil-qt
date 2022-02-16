@@ -116,22 +116,6 @@
          <string>$(group)_UINDEX_STATUS</string>
         </property>
        </widget>
-       <widget class="QENumericEdit" name="qenumericedit_3">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>310</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_BRAKEONDELAY_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
        <widget class="QEComboBox" name="qecombobox_7">
         <property name="geometry">
          <rect>
@@ -143,22 +127,6 @@
         </property>
         <property name="variable" stdset="0">
          <string>$(group)_BRAKE_CMD</string>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_4">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>350</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_BRAKEPORT_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
         </property>
        </widget>
        <widget class="QGroupBox" name="titleGroupBox">
@@ -370,22 +338,6 @@
          <string>Error Limit (CTS)</string>
         </property>
        </widget>
-       <widget class="QENumericEdit" name="qenumericedit_7">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>490</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_ESTALLTIME_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_22">
         <property name="geometry">
          <rect>
@@ -452,22 +404,6 @@
         </property>
         <property name="text">
          <string>Motor Brake ON/OFF Port</string>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_8">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>510</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_STEPSMOOTH_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
         </property>
        </widget>
        <widget class="QELabel" name="qelabel_22">
@@ -557,38 +493,6 @@
          <string>$(group)_ERRLIMIT_MON</string>
         </property>
        </widget>
-       <widget class="QENumericEdit" name="qenumericedit_6">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>430</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_ERRLIMIT_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_2">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>290</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_OFFDELAY_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
        <widget class="QELabel" name="qelabel_31">
         <property name="geometry">
          <rect>
@@ -603,22 +507,6 @@
         </property>
         <property name="variable" stdset="0">
          <string>$(group)_VELOCITYEGU_MON</string>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>270</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_ONDELAY_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
         </property>
        </widget>
        <widget class="QEComboBox" name="qecombobox_11">
@@ -921,22 +809,6 @@
          <string>$(group)_LIMITDISABLE_CMD</string>
         </property>
        </widget>
-       <widget class="QENumericEdit" name="qenumericedit_9">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>530</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_EGUAFTLIMIT_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
        <widget class="QEComboBox" name="qecombobox">
         <property name="geometry">
          <rect>
@@ -996,22 +868,6 @@
         </property>
         <property name="variable" stdset="0">
          <string>$(group)_STEPSMOOTH_MON</string>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_10">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>650</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_JAHV_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
         </property>
        </widget>
        <widget class="QELabel" name="qelabel_27">
@@ -1344,22 +1200,6 @@
          </property>
         </widget>
        </widget>
-       <widget class="QENumericEdit" name="qenumericedit_5">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>390</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_STOPDELAY_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_16">
         <property name="geometry">
          <rect>
@@ -1410,70 +1250,6 @@
         </property>
         <property name="text">
          <string>Use Switch When Homing</string>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_11">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>670</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_USERDATADEADB_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_12">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>760</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_AMPGAIN_CMD</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_13">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>780</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_AMPCLGAIN_CMD</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QENumericEdit" name="qenumericedit_14">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>800</y>
-          <width>160</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="variable" stdset="0">
-         <string>$(group)_AMPLC_SP</string>
-        </property>
-        <property name="variableSubstitutions" stdset="0">
-         <string/>
         </property>
        </widget>
        <widget class="QELabel" name="qelabel_33">
@@ -1563,6 +1339,188 @@
          <string>Low Current Mode</string>
         </property>
        </widget>
+       <widget class="QELineEdit" name="qelineedit">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>270</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ONDELAY_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>290</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_OFFDELAY_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>310</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEONDELAY_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_4">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>350</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_BRAKEPORT_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_5">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>390</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STOPDELAY_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>430</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ERRLIMIT_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_7">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>490</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_ESTALLTIME_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_8">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>510</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_STEPSMOOTH_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_9">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>530</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_EGUAFTLIMIT_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_10">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>650</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_JAHV_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_11">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>670</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_USERDATADEADB_SP</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_12">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>760</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPGAIN_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_13">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>780</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPCLGAIN_CMD</string>
+        </property>
+       </widget>
+       <widget class="QELineEdit" name="qelineedit_14">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>800</y>
+          <width>160</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(group)_AMPLC_SP</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -1581,9 +1539,9 @@
    <header>QELabel.h</header>
   </customwidget>
   <customwidget>
-   <class>QENumericEdit</class>
-   <extends>QWidget</extends>
-   <header>QENumericEdit.h</header>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

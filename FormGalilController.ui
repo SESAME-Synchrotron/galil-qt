@@ -707,7 +707,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_1">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -750,7 +750,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_2">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -793,7 +793,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_3">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -836,7 +836,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_4">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -879,7 +879,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_5">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -922,7 +922,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_6">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -965,7 +965,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_7">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1008,7 +1008,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_8">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1077,7 +1077,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_9">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1105,7 +1105,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_10">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1133,7 +1133,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_11">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1161,7 +1161,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_12">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1189,7 +1189,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_14">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1217,7 +1217,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_16">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1245,7 +1245,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_13">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -1273,7 +1273,7 @@ QGroupBox::title {
   </widget>
   <widget class="QComboBox" name="cbMotorA_15">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
