@@ -11,7 +11,7 @@ FormGalilMotorSSI::FormGalilMotorSSI(QString group, QWidget *parent) :
 
     CONNECT_CLOSE_BUTTON;
     SET_GROUP(QELabel);
-    SET_GROUP(QENumericEdit);
+    SET_GROUP(QELineEdit);
     SET_GROUP(QEComboBox);
 }
 
